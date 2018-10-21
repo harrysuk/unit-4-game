@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- Name and directions -->
+    <div class="container">
+        <div class="jumbotron bg-info text-ceneter">
+            <h1>Crystal Collector !</h1>
+            <p>There are four crystals presented below. they each contain a random amount of charm points. use the crystal to get to your needed charm pointe but becareful of going over or you will lose. </p>
+        </div>
+    </div>
+<br>
+<!-- point counter, current score and win/lose score -->
+    <div class="container">
+        <div class="row justify-content-md-center bg-success">
+                <div class="col-3">
+                    <h2 id="charmneeded">Charm Needed</h2>
+                </div>
+                <div class="col-3">
+                    <h2 id="charmamount">Current Charm Points</h2>
+                </div>
+                <div class="col-3">
+                    <h2 id="wins">Wins:</h2>
+                    <h2 id="loses">Losses:</h2>
+                </div>       
+        </div>
+    </div>
+<br>
+    <!-- the gems -->
+    <div class="container">
+        <div class="row justify-content-md-center bg-warning">
+            <div class = "col-3">
+                    <img src="/assets/images/image1.png" class=JewelSs id="first">
+            </div>
+            <div class = "col-3">
+                    <img src="/assets/images/image2.png" class=JewelSs id="second">
+            </div>
+            <div class = "col-3">
+                    <img src="/assets/images/image3.png" class=JewelSs id="third">
+            </div>
+            <div class = "col-3">
+                    <img src="/assets/images/image4.png" class=JewelSs id="fourth">
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
