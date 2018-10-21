@@ -1,9 +1,9 @@
-window.onload = function (){
+$(document).ready(function() {
 
 // Function to random numbers to score needed and charm points 
 
 function getrandomint(min, max){
-    return Math.floor(Math.randon() * (max - min +1)) + min;}
+    return Math.floor(Math.random() * (max - min +1)) + min;}
 
 // The varibles needed
 var charmneed;
@@ -11,6 +11,7 @@ var wins = 0;
 var losses = 0;
 var crystals = [];
 var charmtotal = 0;
+var charm = [];
 
 function startGame(){
 
@@ -28,11 +29,12 @@ function startGame(){
 
     function loser(){
         losses++;
-        
+
     }
 
-    $("#first").on ('click', function(){
+    $("#first").onclick = function(){
         charmtotal= charmtotal + charm[0];
+        console.log(charmtotal);
         $("#charmamount").html(charmtotal);
         if (charmtotal == charmneed){
             winners();
@@ -40,9 +42,9 @@ function startGame(){
         else if(charmtotal > charmneed){
             loser();
         }
-    })
+    }
 
-    $("#second").on ('click', function(){
+    $("#second").onclick = function(){
         charmtotal= charmtotal + charm[1];
         $("#charmamount").html(charmtotal);
         if (charmtotal == charmneed){
@@ -51,9 +53,9 @@ function startGame(){
         else if(charmtotal > charmneed){
             loser();
         }
-    })
+    }
 
-    $("#third").on ('click', function(){
+    $("#third").onclick = function(){
         charmtotal= charmtotal + charm[2];
         $("#charmamount").html(charmtotal);
         if (charmtotal == charmneed){
@@ -62,9 +64,9 @@ function startGame(){
         else if(charmtotal > charmneed){
             loser();
         }
-    })
+    }
 
-    $("#fourth").on ('click', function(){
+    $("#fourth").onclick = function(){
         charmtotal= charmtotal + charm[3];
         $("#charmamount").html(charmtotal);
         if (charmtotal == charmneed){
@@ -73,10 +75,11 @@ function startGame(){
         else if(charmtotal > charmneed){
             loser();
         }
-    })
+    }
 }
 
 
 
 
-}
+startGame();
+});
