@@ -3,3 +3,9 @@
   max-width: 250px;  
 
 }
+
+body {
+  background-color: chartreuse;
+  background-image: url("../images/backgroundjewel.jpeg");
+  font-family: cursive;
+}
